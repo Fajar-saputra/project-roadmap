@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 3rem;
+    max-width: 800px;
+    width: 90%;
+    margin: 1rem auto 0; 
+    border: 5px solid black;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 1px solid #333;
+    margin: 20px 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
