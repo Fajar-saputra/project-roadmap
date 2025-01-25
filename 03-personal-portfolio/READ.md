@@ -1,12 +1,19 @@
-# Basic HTML Website
+# Personal Portfolio
 
 ## Goal
 
-Create a basic website using HTML. Focus on using correct HTML tags and structure.
+Add styles to previous project. Focus on layout and responsive design.
 
 ## Requirements
 
-- [x] Pages: Home, Projects, Articles, Contact
-- [x] Navigation bar with links to each page, at the top of each page
-- [x] Structure the content in a way that makes adding styles easy
-- [x] Add SEO meta tags
+- [X] Fully styled and responsive website
+- [x] Consistent color scheme and typography
+- [x] Use flexbox, media queries, and grid to create a responsive layout
+- [x] Responsive navigation bar
+- [x] Well-styled contact form
+
+Bonus:
+
+- [x] Utilize Google Fonts
+- [ ] Link to GitHub pages
+- [x] Add dark mode support
