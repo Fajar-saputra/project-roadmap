@@ -21,7 +21,7 @@
 
 
 li {
-    text-decoration: none;
+    list-style: none;
 }
 
 a {
@@ -38,8 +38,9 @@ a {
 
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 1.5rem 0;
+    gap: 1rem;
 }
 
 .logo {
@@ -59,18 +60,51 @@ header {
 }
 
 .hero {
-    background: url("https://cdn-brilio-net.akamaized.net/webp/news/2024/11/13/311240/1200xauto-apa-itu-coding-mata-pelajaran-yang-akan-diajarkan-sejak-sd-241113y.jpg");
-    height: 400px;
-    object-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.hero :where( h1, p) {
-    color: var(--background-color);
-    text-shadow: 0 0 50px white;
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.projects {
+    text-align: center;
+}
+
+.projects ul li {
+    margin: 1em 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    ...
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    ...
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    ...
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    ...
 }
