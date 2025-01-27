@@ -12,4 +12,5 @@ This repository contains projects based on [roadmap.sh](https://roadmap.sh/proje
 
 ## Repository URL
 
--   GitHub Repository: [https://github.com/username/project-roadmap)](https://github.com/Fajar-saputra/project-github)
+-   GitHub Repository: [https://github.com/username/project-roadmap](https://github.com/Fajar-saputra/project-github)
+-   roadmap.sh: [roadmap.sh](https://roadmap.sh/projects/basic-html-website)
