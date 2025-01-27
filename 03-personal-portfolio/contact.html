@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple HTML-only website">
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="A simple HTML-only website for roadmap.sh frontend" />
     <meta name="keywords" content="Frontend Project, HTML, Roadmap.sh" />
@@ -14,38 +14,45 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">fajar<span>saputra</span></div>
+    <header class="flexcenter">
+        <div class="logo">fajar<span>saputra</span></div>
+        <nav aria-label="Primary Navigation">
             <ul class="navbar">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="articles.html" class="nav-link">Articles</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="contact">
-        <h1>Contact Me</h1>
-        <form action="" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <section class="contact container flexcolumn">
+        <h1 class="section-title">Contact Me</h1>
+        <form action="" method="POST" class="flexcolumn">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" autofocus>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your email">
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Message..."></textarea>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" class="btn-submit transition">Send Message</button>
         </form>
     </section>
-    </main>
 
-    <footer>
-        <p>&copy; all rights reserved 2025</p>
+
+    <footer class="footer-wrapper flexcenter">
+        <p>&copy; <span id="current-year"></span> All rights reserved</p>
+        <a href="https://github.com/Fajar-saputra" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/fajar-saputra" target="_blank">LinkedIn</a>
     </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+
 </body>
 
 </html>
