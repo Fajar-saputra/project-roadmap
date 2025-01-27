@@ -17,3 +17,5 @@ Bonus:
 - [x] Utilize Google Fonts
 - [ ] Link to GitHub pages
 - [x] Add dark mode support
+
+[roadmap.sh]{https://roadmap.sh/projects/portfolio-website}

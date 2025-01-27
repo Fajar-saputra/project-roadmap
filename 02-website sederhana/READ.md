@@ -11,3 +11,5 @@ Create a basic website using HTML. Focus on using correct HTML tags and structur
 - [x] Structure the content in a way that makes adding styles easy
 - [x] Add SEO meta tags
 
+https://roadmap.sh/projects/basic-html-website
+https://github.com/Fajar-saputra/project-roadmap/tree/main/02-website%20sederhana
