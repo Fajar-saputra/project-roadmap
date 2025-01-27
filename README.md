@@ -8,6 +8,8 @@ This repository contains projects based on [roadmap.sh](https://roadmap.sh/proje
 
 -   Personal Portfolio: [Personal Portfolio](https://github.com/Fajar-saputra/project-roadmap/tree/main/03-personal-portfolio)
 
+-   Website Sederhana: [Website Sederhana](https://github.com/Fajar-saputra/project-roadmap/tree/main/02-website%20sederhana)
+
 ## Repository URL
 
 -   GitHub Repository: [https://github.com/username/project-roadmap)](https://github.com/Fajar-saputra/project-github)
