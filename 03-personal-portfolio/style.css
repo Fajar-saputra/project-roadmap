@@ -1,25 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* VARIABLE */
+/* ROOT VARIABLES */
 :root {
     --background-color: #fff;
     --primary-text-color: #000;
     --secondary-text-color: #a0a0a0;
+    --highlight-color: #000;
 
     --border-radius: 5px;
     --border-color: rgb(230, 230, 230);
     --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-
-    --background-dark: #121212;
-    --primary-text-dark: #ffffff;
-    --secondary-text-dark: #a0a0a0;
 }
 
-[data-theme='dark'] {
-    --background-color: var(--background-dark);
-    --primary-text-color: var(--primary-text-dark);
+/* DARK THEME VARIABLES */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --primary-text-color: #fff;
+    --secondary-text-color: #a0a0a0;
+    --highlight-color: #00FF00;
+    --border-color: #333;
 }
 
+/* Tambahkan ini di bagian CSS Anda untuk warna default tombol */
+#toggle-theme {
+    background-color: var(--primary-text-color);
+    color: var(--background-color);
+    border: none;
+    padding: .5rem .9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
 
 /* GLOBAL STYLING */
 * {
@@ -36,12 +48,38 @@ body {
     margin: 0;
 }
 
-li {
-    list-style: none;
+body {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
 }
 
-p,
+h1,
+h2,
+h3,
+a {
+    color: var(--highlight-color);
+}
+
+a,
+.btn-submit {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a:hover,
+.btn-submit:hover {
+    color: var(--primary-text-color);
+    background-color: #4CAF50;
+    transition: all .3s ease-in-out;
+}
+
+p {
+    font-size: .85rem;
+}
+
+
 li {
+    list-style: none;
     font-size: .85rem;
 }
 
@@ -66,6 +104,14 @@ button:focus-visible {
     margin: 100px auto 0;
 }
 
+#menu-toggle {
+    border: 1px solid var(--highlight-color);
+    padding: .5rem .9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
 section {
     margin: 2rem 0;
     min-height: 100%;
@@ -82,7 +128,6 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    /* Tambahkan jika ingin jarak antar elemen */
 }
 
 .grid-auto {
@@ -100,10 +145,9 @@ section {
     flex-direction: column;
 }
 
-
 /* INDEX */
 header {
-    flex-direction: column;
+    justify-content: space-around;
     padding: 1.5rem 0;
     gap: 1rem;
     background-color: var(--background-color);
@@ -119,6 +163,10 @@ header {
 
 .logo span {
     color: #4CAF50;
+}
+
+nav {
+    display: none;
 }
 
 .navbar {
@@ -308,6 +356,10 @@ textarea:focus {
         grid-template-columns: 1fr 1fr;
     }
 
+    #menu-toggle {
+        display: block;
+    }
+
     header {
         flex-direction: row;
         justify-content: space-around;
@@ -316,6 +368,14 @@ textarea:focus {
         left: 0;
         box-shadow: var(--box-shadow);
         width: 100%;
+    }
+
+    nav {
+        display: block;
+    }
+
+    #menu-toggle {
+        display: none;
     }
 
     .projects-index {

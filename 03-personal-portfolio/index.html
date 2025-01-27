@@ -11,10 +11,12 @@
 	<meta name="author" content="Fajar saputra" />
 	<title>Basic HTML Website</title>
 	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 	<header class="flexcenter">
+		<i class='bx bx-menu' id="menu-toggle"></i>
 		<div class="logo">fajar<span>saputra</span></div>
 		<nav aria-label="Primary Navigation">
 			<ul class="navbar">
@@ -24,6 +26,10 @@
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
+		<button class="toggle-theme" onclick="toggleTheme()" id="toggle-theme">
+			<i class='bx bxs-sun' id="sun_icon"></i>
+			<i class='bx bxs-moon ' id="moon_icon" style="display: none;"></i>
+		</button>
 	</header>
 
 	<main class="container">
@@ -101,10 +107,8 @@
 		<a href="https://github.com/Fajar-saputra" target="_blank">GitHub</a>
 		<a href="https://linkedin.com/in/fajar-saputra" target="_blank">LinkedIn</a>
 	</footer>
-	<script>
-		document.getElementById('current-year').textContent = new Date().getFullYear();
-	</script>
 
+	<script src="main.js"></script>
 </body>
 
 </html>
