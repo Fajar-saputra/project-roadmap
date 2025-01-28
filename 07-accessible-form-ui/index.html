@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="form-container">
+            <form action="">
+                <div class="form-group">
+
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" aria-required="true">
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" aria-required="true" value="" placeholder="Masukkan email"
+                            aria-invalid="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" aria-required="true" aria-invalid="false"
+                            placeholder="Masukkan password" oninput="validatePasswords()">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Comfirm Password</label>
+                        <input type="password" id="confirm-password" aria-required="true" aria-invalid="false"
+                            placeholder="Konfirmasi password" oninput="validatePasswords()">
+
+                        <p id="password-match-error" style="color: red; display: none;">
+                            Password dan konfirmasi password tidak cocok.
+                        </p>
+                        <button type="submit">Update</button>
+                    </div>
+
+                </div>
+            </form>
+
+            <div class="form-progress">
+                <div class="bar-progress"></div>
+                <p>Profile Completeness</p>
+                <ul class="list-complete">
+                    <li><s> Create Account</s></li>
+                    <li><s> Update Roadmap Progrress</s></li>
+                    <li><s> Setup Public Profile</s></li>
+                    <li><s> Complete your first project</s></li>
+                    <li>Invite your friends</li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
