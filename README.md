@@ -10,7 +10,7 @@ This repository contains projects based on [roadmap.sh](https://roadmap.sh/proje
 
 -   Website Sederhana: [Website Sederhana](https://github.com/Fajar-saputra/project-roadmap/tree/main/02-website%20sederhana) [roadmap.sh](https://roadmap.sh/projects/basic-html-website)
 
--   Changelog Component: [Changelog Component] [roadmap.sh](https://roadmap.sh/projects/changelog-component)
+-   Changelog Component: [Changelog Component](https://github.com/Fajar-saputra/project-roadmap/tree/main/04-changelog-component) [roadmap.sh](https://roadmap.sh/projects/changelog-component)
 
 ## Repository URL
 
