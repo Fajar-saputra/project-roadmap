@@ -14,6 +14,8 @@ This repository contains projects based on [roadmap.sh](https://roadmap.sh/proje
 
 -   Testimonial Cards: [Testimonial Cards](https://github.com/Fajar-saputra/project-roadmap/tree/main/05-testimonial-cards) [roadmap](https://roadmap.sh/projects/testimonial-cards)
 
+-   Calendar UI: [Calendar UI](https://github.com/Fajar-saputra/project-roadmap/tree/main/06-datepicker-ui) [roadmap.sh](https://roadmap.sh/projects/datepicker-ui)
+
 ## Repository URL
 
 -   GitHub Repository: [https://github.com/username/project-roadmap](https://github.com/Fajar-saputra/project-github)
