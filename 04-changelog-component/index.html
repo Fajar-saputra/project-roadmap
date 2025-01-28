@@ -10,12 +10,19 @@
     <meta name="author" content="Fajar saputra">
     <title>Changelog Component - Frontend Software Design</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <div class="container">
         <h1>Changelog</h1>
         <p>An outline of notes or records of all significant changes made to the project or software.</p>
+
+        <button id="dark-mode">
+            <i class="bx bxs-sun" id="sun-icon"></i>
+            <i class="bx bxs-moon" id="moon-icon"></i>
+          </button>
+          
 
         <div class="changelog-timeline">
             <div class="timeline-item">
@@ -62,8 +69,12 @@
                 <div class="timeline-date">April 7, 2025</div>
                 <div class="timeline-content">Launching the Frontend Software</div>
             </div>
+
         </div>
+        <a href="#" class="button">Visit Complete Changelog</a>
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
