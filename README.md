@@ -4,7 +4,7 @@ This repository contains projects based on [roadmap.sh](https://roadmap.sh/proje
 
 ## Live Projects
 
--   Curriculum Vitae: ([Curriculum Vitae](https://github.com/Fajar-saputra/project-github/tree/main/curriculum-vitae-sederhana) [roadmap.sh](https://roadmap.sh/projects/curriculum-vitae))
+-   Curriculum Vitae: ([Curriculum Vitae](https://github.com/Fajar-saputra/project-github/tree/main/curriculum-vitae-sederhana)) ([roadmap.sh](https://roadmap.sh/projects/curriculum-vitae))
 
 -   Personal Portfolio: ([Personal Portfolio](https://github.com/Fajar-saputra/project-roadmap/tree/main/03-personal-portfolio)) ([roadmap.sh](https://roadmap.sh/projects/portfolio-website))
 
@@ -16,9 +16,11 @@ This repository contains projects based on [roadmap.sh](https://roadmap.sh/proje
 
 -   Calendar UI: ([Calendar UI](https://github.com/Fajar-saputra/project-roadmap/tree/main/06-datepicker-ui)) ([roadmap.sh](https://roadmap.sh/projects/datepicker-ui))
 
--   Accessible Form UI : ([Accessible Form UI](https://github.com/Fajar-saputra/project-roadmap/tree/main/07-accessible-form-ui)) [roadmap.sh](https://roadmap.sh/projects/accessible-form-ui)
+-   Accessible Form UI: ([Accessible Form UI](https://github.com/Fajar-saputra/project-roadmap/tree/main/07-accessible-form-ui)) ([roadmap.sh](https://roadmap.sh/projects/accessible-form-ui))
+
+-   image-grid-layout: ([08-image-grid-layout](https://github.com/Fajar-saputra/project-roadmap/tree/main/08-image-grid-layout)) ([roadmap.sh](https://roadmap.sh/projects/image-grid))
 
 ## Repository URL
 
--   GitHub Repository: [https://github.com/username/project-roadmap](https://github.com/Fajar-saputra/project-github)
+-   GitHub Repository: [github.com](https://github.com/Fajar-saputra/project-github)
 -   roadmap.sh: [roadmap.sh](https://roadmap.sh/projects/)
