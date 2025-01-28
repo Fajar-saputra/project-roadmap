@@ -12,6 +12,8 @@ This repository contains projects based on [roadmap.sh](https://roadmap.sh/proje
 
 -   Changelog Component: [Changelog Component](https://github.com/Fajar-saputra/project-roadmap/tree/main/04-changelog-component) [roadmap.sh](https://roadmap.sh/projects/changelog-component)
 
+-   Testimonial Cards: [Testimonial Cards](https://github.com/Fajar-saputra/project-roadmap/tree/main/05-testimonial-cards) [roadmap](https://roadmap.sh/projects/testimonial-cards)
+
 ## Repository URL
 
 -   GitHub Repository: [https://github.com/username/project-roadmap](https://github.com/Fajar-saputra/project-github)
