@@ -24,6 +24,8 @@ This repository contains projects based on [roadmap.sh](https://roadmap.sh/proje
 
 -   Tabs : [Tabs](https://github.com/Fajar-saputra/project-roadmap/tree/main/10-tabs) [roadmap.sh](https://roadmap.sh/projects/tabs) [roadmap.sh](https://roadmap.sh/projects/simple-tabs)
 
+-   Cookie Consent: [11-cookie-consent](https://github.com/Fajar-saputra/project-roadmap/tree/main/11-cookie-consent) [roadmap.sh](https://roadmap.sh/projects/cookie-consent)
+
 ## Repository URL
 
 -   GitHub Repository: [github.com](https://github.com/Fajar-saputra/project-github)
