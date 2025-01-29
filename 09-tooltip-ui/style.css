@@ -1,0 +1,187 @@
+/* Warna default untuk Light Mode */
+:root {
+    --primary-color: rgb(255, 128, 0);
+    --white-color: #ffffff;
+    --gray-light: #f0f0f0;
+    --dark-gray: #333333;
+    --blue-dark: #003366;
+}
+
+/* Dark Mode Styles menggunakan data-theme */
+[data-theme='dark'] {
+    --primary-color: rgb(255, 128, 0);
+    --white-color: #f0f0f0;
+    --gray-light: #2c2c2c;
+    --dark-gray: #bbbbbb;
+    --blue-dark: #003366;
+}
+
+[data-theme='dark'] .tooltip .tooltiptext {
+    background-color: #333;
+    color: #fff;
+}
+
+[data-theme='dark'] .navbar li:hover .tooltiptext {
+    background-color: #444;
+}
+
+/* Style untuk teks dan background */
+body {
+    background-color: var(--gray-light);
+    color: var(--dark-gray);
+}
+
+.color-text {
+    color: var(--primary-color);
+}
+
+.background {
+    background-color: var(--blue-dark);
+}
+
+.tooltip .tooltiptext {
+    background-color: var(--blue-dark);
+    color: var(--white-color);
+}
+
+
+
+/* Style umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.navbar li {
+    font-weight: 500;
+}
+
+.logo-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.logo-brand::after {
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    content: 'This Logo Brand';
+    width: 120px;
+    background-color: #6c757d;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -180%;
+    left: 50%;
+    margin-left: -60px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.logo-brand:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.logo-brand span {
+    color: var(--primary-color);
+}
+
+.dark-mode {
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    padding: .8rem 1rem;
+    background-color: white;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    font-size: 1rem;
+    visibility: hidden;
+    width: 120px;
+    background-color: #6c757d;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar li {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+button.dark-mode {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+button i {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    padding: 1rem;
+}
