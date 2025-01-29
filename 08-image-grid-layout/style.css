@@ -1,48 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Styling umum untuk gambar */
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    border-radius: 8px;
 }
 
+/* Efek hover pada gambar */
+.grid-layout img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+/* Styling untuk container grid */
 .grid-layout {
-    border: 1px solid red;
-    padding: 1rem;
-    margin: 0 auto;
-    width: 700px;
-    height: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 3rem auto 0;
+    max-width: 800px;
+    width: 80%;
+    height: auto;
     display: grid;
-    gap: .5rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
-    grid-template-areas:
-        "satu dua tiga"
-        "satu lima tiga"
-        "empat lima enam";
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    position: relative;
+    overflow: hidden;
 }
 
-
-/* grid-area untuk setiap gambar */
-.image-grid img:nth-child(1) {
-    grid-area: satu;
+/* Efek hover untuk overlay */
+.grid-layout a:hover::after {
+    opacity: 1;
 }
 
-.image-grid img:nth-child(2) {
-    grid-area: dua;
+/* Caption muncul saat hover */
+.grid-layout a:hover::before {
+    content: "Lihat Lebih Dekat";
+    position: absolute;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 1;
 }
 
-.image-grid img:nth-child(3) {
-    grid-area: tiga;
+/* Grid responsive untuk tampilan tablet (768px ke atas) */
+@media (min-width: 768px) {
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    /* grid-area: row-start / column-start / row-end / column-end */
+    .grid-layout a:nth-child(1) {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .grid-layout a:nth-child(2) {
+        grid-area: 4 / 2 / 6 / 3;
+    }
+
+    .grid-layout a:nth-child(3) {
+        grid-area: 1 / 2 / 3 / 3;
+    }
+
+    .grid-layout a:nth-child(4) {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .grid-layout a:nth-child(5) {
+        grid-area: 3 / 1 / 5 / 2;
+    }
 }
 
-.image-grid img:nth-child(4) {
-    grid-area: empat;
-}
+/* Grid responsive untuk tampilan desktop (1024px ke atas) */
+@media (min-width: 1024px) {
+    .grid-layout {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 
-.image-grid img:nth-child(5) {
-    grid-area: lima;
-}
+    .grid-layout a:nth-child(1) {
+        grid-area: 1 / 1 / 3 / 2;
+    }
 
-.image-grid img:nth-child(6) {
-    grid-area: enam;
+    .grid-layout a:nth-child(2) {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .grid-layout a:nth-child(3) {
+        grid-area: 1 / 3 / 3 / 4;
+    }
+
+    .grid-layout a:nth-child(4) {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .grid-layout a:nth-child(5) {
+        grid-area: 2 / 2 / 4 / 3;
+    }
+
+    .grid-layout a:nth-child(6) {
+        grid-area: 3 / 3 / 4 / 4;
+    }
 }

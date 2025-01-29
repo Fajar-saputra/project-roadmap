@@ -18,7 +18,7 @@ This repository contains projects based on [roadmap.sh](https://roadmap.sh/proje
 
 -   Accessible Form UI: ([Accessible Form UI](https://github.com/Fajar-saputra/project-roadmap/tree/main/07-accessible-form-ui)) ([roadmap.sh](https://roadmap.sh/projects/accessible-form-ui))
 
--   image-grid-layout: ([08-image-grid-layout](https://github.com/Fajar-saputra/project-roadmap/tree/main/08-image-grid-layout)) ([roadmap.sh](https://roadmap.sh/projects/image-grid))
+-   Image Grid Layout: ([08-image-grid-layout](https://github.com/Fajar-saputra/project-roadmap/tree/main/08-image-grid-layout)) ([roadmap.sh](https://roadmap.sh/projects/image-grid))
 
 ## Repository URL
 
