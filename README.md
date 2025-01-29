@@ -20,6 +20,8 @@ This repository contains projects based on [roadmap.sh](https://roadmap.sh/proje
 
 -   Image Grid Layout: ([08-image-grid-layout](https://github.com/Fajar-saputra/project-roadmap/tree/main/08-image-grid-layout)) ([roadmap.sh](https://roadmap.sh/projects/image-grid))
 
+-   Tooltip UI: ([09-tooltip-ui](https://github.com/Fajar-saputra/project-roadmap/tree/main/09-tooltip-ui))
+
 ## Repository URL
 
 -   GitHub Repository: [github.com](https://github.com/Fajar-saputra/project-github)
