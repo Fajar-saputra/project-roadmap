@@ -26,6 +26,8 @@ This repository contains projects based on [roadmap.sh](https://roadmap.sh/proje
 
 -   Cookie Consent: [11-cookie-consent](https://github.com/Fajar-saputra/project-roadmap/tree/main/11-cookie-consent) [roadmap.sh](https://roadmap.sh/projects/cookie-consent)
 
+-   Restricted Textarea: [12-restricted-textarea](https://github.com/Fajar-saputra/project-roadmap/tree/main/12-restricted-textarea) [roadmap.sh](https://roadmap.sh/projects/restricted-textarea)
+
 ## Repository URL
 
 -   GitHub Repository: [github.com](https://github.com/Fajar-saputra/project-github)

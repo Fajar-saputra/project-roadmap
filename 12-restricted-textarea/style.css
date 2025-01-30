@@ -1,34 +1,36 @@
-body {
+.container {
+    max-width: 600px;
+    margin: 20px auto;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
 }
 
-.container {
-    width: 300px;
-    text-align: center;
+.textarea-wrapper {
+    position: relative;
 }
 
 textarea {
     width: 100%;
-    height: 100px;
-    padding: 10px;
+    height: 150px;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     resize: none;
+    margin-bottom: 8px;
 }
 
-#charCount {
-    margin-top: 10px;
+textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.counter {
+    text-align: right;
     font-size: 14px;
-    color: #333;
+    color: #666;
 }
 
-#charCount.limit-reached {
-    color: red;
+.counter.limit {
+    color: #ff4444;
+    font-weight: bold;
 }
