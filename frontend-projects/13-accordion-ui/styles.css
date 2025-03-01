@@ -1,16 +1,14 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  max-width: 600px;
-  margin: auto;
 }
 
-.accordion {
+.accordion-container {
+  max-width: 600px;
   margin: 0 auto;
 }
 
 .accordion-item {
-  border: 1px solid #ddd;
   margin-bottom: 5px;
   border-radius: 5px;
   overflow: hidden;
@@ -18,7 +16,7 @@ body {
 
 .accordion-header {
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #ddf6ff;
   border: none;
   text-align: left;
   padding: 15px;
@@ -35,7 +33,7 @@ body {
 }
 
 .accordion-header:hover {
-  background-color: #ddd;
+  background-color: #bfffc3;
 }
 
 .accordion-content {
@@ -56,5 +54,5 @@ body {
 }
 
 .accordion-item.active .accordion-header {
-  background-color: #ddd;
+  background-color: #daff9f;
 }
