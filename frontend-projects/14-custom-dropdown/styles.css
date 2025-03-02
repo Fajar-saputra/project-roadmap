@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown__container {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+}
+
+.dropdown__btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown__btn::after {
+  content: url('../../assets/chevron-down.svg');
+  float: right;
+}
+
+.dropdown__list {
+  display: none;
+  /* Initially hidden */
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.dropdown__list.open {
+  display: block;
+  /* Shown when dropdown is opened */
+}
+
+.dropdown__item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown__item:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown__btn::after {
+  content: url('../../assets/chevron-up.svg');
+}
+
+.dropdown__item.selected::after {
+  content: url('../../assets/check.svg');
+  float: right;
+  margin-right: 10px;
+  color: black;
+  font-weight: bold;
+}
